@@ -1,0 +1,24 @@
+{
+  "name": "lommerenger-cli",
+  "version": "1.0.0",
+  "description": "Simple lommeregner som CLI",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lassv/lommerenger-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lassv/lommerenger-cli/issues"
+  },
+  "homepage": "https://github.com/lassv/lommerenger-cli#readme",
+  "dependencies": {
+    "inquirer": "^8.2.5"
+  }
+}
