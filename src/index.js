@@ -24,26 +24,32 @@ const questions = [
 inquirer.prompt(questions)
   .then((answers) => {
 
-    let res = ""
+    let res
+    
+    function message(result) {
+        console.log(`Resultatet er: ${result}`)
+    }
 
     switch (answers.type) {
         case "+":
             res = parseInt(answers.firstNumber) + parseInt(answers.secondNumber);
-            console.log(`Resultatet er ${res}`);
+            message(res);
             break;
         case "-":
             res = parseInt(answers.firstNumber) - parseInt(answers.secondNumber);
-            console.log(`Resultatet er ${res}`);
+            message(res);
             break;
         case "*":
             res = parseInt(answers.firstNumber) * parseInt(answers.secondNumber);
-            console.log(`Resultatet er ${res}`);
+            message(res)
             break;
         case "/":
             res = parseInt(answers.firstNumber) / parseInt(answers.secondNumber);
-            console.log(`Resultatet er ${res}`);
+            message(res)
             break;
     }
+
+
 
   })
   .catch((error) => {
